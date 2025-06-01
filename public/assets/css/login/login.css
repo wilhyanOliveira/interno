@@ -1,0 +1,118 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 29, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 12pt;
+    font-family: Arial;
+}
+
+.main-login 
+{
+    display: flex;
+    width:75%; 
+    max-width: 950px;
+    height:50vh;
+    background: #fff; 
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.left-login
+{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    padding: 40px;
+    color: #000;
+    background: #f0f0f0;
+    flex: 1;
+    min-width: 0;
+}
+
+.right-login, .formulario
+{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    padding: 40px;
+    color: #000;
+    background: #f0f0f0;
+    flex: 1;
+    min-width: 0;
+    
+}
+
+.right-login h1
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 29, 97) ;
+
+}
+
+.left-login h1 
+{
+    margin: 0;
+    color: rgb(0, 29, 97)
+}
+
+.textField
+{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textField > input
+{
+    width: 100%;
+    border: none;
+    border-radius: 10px;    
+    padding: 15px;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.textField > input::placeholder
+{
+    color: rgb(1, 134, 225);
+}
+
+.textField > label
+{
+    margin: 10px;
+}
+
+.btn_login
+{
+    width: 100%;
+    padding: 15px 0px;
+    margin: 10px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(0, 29, 97);
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100%; 
+    max-width: 300px;
+    height: auto; 
+    margin: 0 ; 
+    display: block; 
+    position: static; 
+}
