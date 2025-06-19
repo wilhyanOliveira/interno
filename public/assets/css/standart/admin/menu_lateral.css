@@ -1,0 +1,53 @@
+nav.menu_lateral
+{
+    width: 300px;
+    height: 100%;
+    background-color:rgb(33, 37, 48);
+    margin-left: none;
+    box-shadow: 3px 0 0 rgb(1, 134, 225) ;
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+
+ul
+{
+    height: 100%;
+    list-style-type: none;
+    padding-inline-start: 15px;
+
+}
+
+ul li.item_menu
+{
+    transition: .2s;
+    margin: 0;
+    padding: 0;
+}
+
+ul li.item_menu:hover
+{
+    background: rgb(1, 134, 225);
+}
+
+ul li.item_menu a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    line-height: 40px;
+    padding: 10px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul li.item_menu a .txt_link
+{
+    margin-left: 10px;
+}
+
+ul li.item_menu a .icon i
+{
+    font-size: 30px;
+}

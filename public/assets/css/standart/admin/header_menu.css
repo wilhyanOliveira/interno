@@ -1,0 +1,25 @@
+header 
+{
+    background-color: rgb(33, 37, 48);
+    color: #fff;
+    padding: 0 20px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    margin: 0;
+    padding-top: 0;
+}
+
+.titulo-header {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 20px;
+    text-align: left;
+    flex-grow: 1;
+}

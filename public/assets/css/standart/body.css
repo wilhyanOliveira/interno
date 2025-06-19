@@ -1,0 +1,14 @@
+body
+{
+    background: rgb(22, 26, 37);
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    font-family: Arial;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: none;
+}
+
