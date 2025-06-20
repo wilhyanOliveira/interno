@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,36 @@
     <link rel="stylesheet" href="/interno/public/assets/css/standart/body.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <script src="/interno/app/views/JS/modals.js"></script>
+    <script src="/interno/app/views/JS/menu_drop_down.js"></script>
+
     <title>Clientes</title>
 </head>
 <body>
     
 <?php include(__DIR__ . '/../../utils/admin/template.php'); ?>
+
+<div class="container"> 
+
+    <main>
+        <div class="container_home">
+            <div class="crud_button">
+                <button class="btn" id="new_cliente">Novo Cliente</button>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="modal_cliente">
+        <h2>Novo Cliente</h2>
+
+        <?php include(__DIR__ . '/../../../forms/admin/form_cliente.php'); ?>
+
+        <button id="cancela_clie" type="button">Cancelar</button>
+        
+    </dialog>
+</div>
+
+
 
 </body>
 </html>

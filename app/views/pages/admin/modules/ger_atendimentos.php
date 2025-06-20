@@ -10,11 +10,21 @@
     <link rel="stylesheet" href="/interno/public/assets/css/standart/body.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <script src="/interno/app/views/JS/menu_drop_down.js"></script>
+
     <title>Gerenciador de Atendimentos</title>
 </head>
 <body>
 
 <?php include(__DIR__ . '/../../utils/admin/template.php'); ?>
+
+<div class="container">    
+    <main>
+        <div class="container_home">
+         
+        </div>
+    </main>
+</div>
 
 </body>
 </html>
