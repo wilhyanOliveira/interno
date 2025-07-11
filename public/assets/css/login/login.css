@@ -1,118 +1,102 @@
-body 
-{
-    margin: 0;
-    padding: 0;
-    background: rgb(0, 29, 97);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-size: 12pt;
-    font-family: Arial;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-login 
-{
-    display: flex;
-    width:75%; 
-    max-width: 950px;
-    height:50vh;
-    background: #fff; 
-    border-radius: 10px;
-    overflow: hidden;
-
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-.left-login
-{
-    display: flex;
-    flex-direction: column;  
-    align-items: center;     
-    justify-content: center; 
-    padding: 40px;
-    color: #000;
-    background: #f0f0f0;
-    flex: 1;
-    min-width: 0;
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgb(0, 0, 23), rgb(0, 0, 4) 70%);
+  overflow: hidden;
 }
 
-.right-login, .formulario
-{
-    display: flex;
-    flex-direction: column;  
-    align-items: center;     
-    justify-content: center; 
-    padding: 40px;
-    color: #000;
-    background: #f0f0f0;
-    flex: 1;
-    min-width: 0;
-    
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
 }
 
-.right-login h1
-{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color:rgb(0, 29, 97) ;
-
+.logo img {
+  width: 350px;
+  filter: drop-shadow(0 0 10px rgb(2, 102, 215));
 }
 
-.left-login h1 
-{
-    margin: 0;
-    color: rgb(0, 29, 97)
+.login-box {
+  background: rgba(10, 20, 50, 0.35); 
+  padding: 50px 40px;
+  border-radius: 18px;
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 0 18px rgba(0, 102, 204, 0.15),
+    inset 0 0 6px rgba(0, 51, 102, 0.12);
+  border: 3px solid rgba(2, 101, 215, 0.571);
+  min-width: 360px;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.textField
-{
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+.login-box h2 {
+  text-align: center;
+  color: rgb(2, 102, 215);
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 30px;
 }
 
-.textField > input
-{
-    width: 100%;
-    border: none;
-    border-radius: 10px;    
-    padding: 15px;
-    font-size: 12pt;
-    outline: none;
-    box-sizing: border-box;
-    margin: 10px;
+.input-group {
+  margin-bottom: 35px;
 }
 
-.textField > input::placeholder
-{
-    color: rgb(1, 134, 225);
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(13, 24, 57, 0.35);;
+  border: 1px solid rgba(13, 24, 57, 0.35);;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
 }
 
-.textField > label
-{
-    margin: 10px;
+.input-group input::placeholder {
+  color: rgb(170, 170, 170);
 }
 
-.btn_login
-{
-    width: 100%;
-    padding: 15px 0px;
-    margin: 10px;
-    margin-top: 20px;
-    border: none;
-    background: rgb(0, 29, 97);
-    border-radius: 15px;
-    box-sizing: border-box;
-    cursor: pointer;
+.input-group label {
+  color: rgb(170, 170, 170);
 }
 
-.logo {
-    width: 100%; 
-    max-width: 300px;
-    height: auto; 
-    margin: 0 ; 
-    display: block; 
-    position: static; 
+.forgot:hover {
+  color: rgb(2, 102, 215);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, rgb(2, 102, 215), rgb(0, 153, 255), rgb(0, 204, 255));
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgb(2, 102, 215)
 }

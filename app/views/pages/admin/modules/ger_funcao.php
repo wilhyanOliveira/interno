@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
 
     <link rel="stylesheet" href="/interno/public/assets/css/home/home_admin.css">
     <link rel="stylesheet" href="/interno/public/assets/css/standart/admin/menu_lateral.css">
@@ -12,8 +13,6 @@
 
     <script src="/interno/app/views/JS/modals.js"></script>
     <script src="/interno/app/views/JS/menu_drop_down.js"></script>
-
-    <title>Funcionarios</title>
 </head>
 <body>
     

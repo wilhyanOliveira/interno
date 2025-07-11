@@ -1,6 +1,6 @@
 header 
 {
-    background-color: rgb(33, 37, 48);
+    background-color: rgb(30, 30, 30);
     color: #fff;
     padding: 0 20px;
     height: 100px;
@@ -18,7 +18,7 @@ header
 
 .titulo-header {
     font-size: 2rem;
-    color: #fff;
+    color: rgb(238, 238, 238);
     margin-left: 20px;
     text-align: left;
     flex-grow: 1;

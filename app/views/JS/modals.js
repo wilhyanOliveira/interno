@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', function()
     const modal = document.querySelector("dialog");
     const cancela_clie = document.querySelector("#cancela_clie");
 
-    new_cliente.onclick = function() {
+    new_cliente.onclick = function() 
+    {
         modal.showModal(); 
     }
 
-    cancela_clie.onclick = function(event) {
+    cancela_clie.onclick = function(event) 
+    {
         event.preventDefault();
         modal.close(); 
     }
@@ -114,6 +116,25 @@ document.addEventListener('DOMContentLoaded', function()
     const new_tipo_atend = document.querySelector("#new_tipo_atend");
     const modal = document.querySelector("dialog");
     const cancela_tipo = document.querySelector("#cancela_tipo");
+
+    new_tipo_atend.onclick = function() 
+    {
+        modal.showModal(); 
+    }
+
+    cancela_tipo.onclick = function(event) 
+    {
+        event.preventDefault();
+        modal.close(); 
+    }
+});
+
+//POPUP FUNÇAO
+document.addEventListener('DOMContentLoaded', function() 
+{
+    const new_tipo_atend = document.querySelector("#new_funcao");
+    const modal = document.querySelector("dialog");
+    const cancela_tipo = document.querySelector("#cancela_funcao");
 
     new_tipo_atend.onclick = function() 
     {

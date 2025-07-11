@@ -97,8 +97,8 @@
                 </li>
 
                 <li class="item_menu">
-                    <a href="../modules/ger_setores.php">
-                        <span class="icon"><i class="bi bi-diagram-2-fill"></i></span>
+                    <a href="../modules/ger_funcao.php">
+                        <span class="icon"><i class="bi bi-person-lines-fill"></i></span>
                         <span class="txt_link">FUNÇÃO</span>
                     </a>
                 </li>

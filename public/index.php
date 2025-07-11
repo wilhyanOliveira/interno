@@ -10,41 +10,35 @@
 </head>
 <body>
 
-<div class = "main-login">
+<div class="container">
+    
+    <div class="content">
+    
+        <div class="logo">
+            <img src="/../interno/public/assets/images/logo chat 400.png" alt="logo" class="logo">
+        </div>
 
-    <div class = "left-login">
-    <img src="/../interno/public/assets/images/logo chat 400.png" alt="logo" class="logo">
-    <h1>Help Desk Center</h1>
-    </div>
+        <div class="login-box">
 
-    <div class="right-login">
-        <div class = "card-login">
+            <h2>FLAME SUPPORT</h2>
 
-        <h1>LOGIN</h1>
-        <div class="formulario">
-        
-            <form action="../app/views/pages/login/login.php" method="post">
+                <form action="../app/views/pages/login/login.php" method="post">
 
-                <div class="textField">
+                <div class="input-group">
 
-                    <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" class="usuario" placeholder="Usuário" required>
                 </div>
 
-                <div class="textField">
-                
-                    <label for="senha">Senha</label>
+                <div class="input-group">
+
                     <input type="password" name="senha" placeholder="Senha" requided>   
                 </div>
 
                     <button type="submit" class="btn_login">Acessar</button>
             </form >
-        </div>
-        </div>
-    </div>
-    </div>
-
     
+        </div>
+    </div>
 </div>
 
 </body>
