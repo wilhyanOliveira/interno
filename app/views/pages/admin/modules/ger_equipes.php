@@ -17,16 +17,27 @@
 </head>
 <body>
 
-<?php include(__DIR__ . '/../../utils/admin/template.php'); ?>
+<?php 
+include(__DIR__ . '/../../utils/admin/template.php'); 
+include(__DIR__.'/../../../../database/conexao.php');
+?>
 
 <div class="container">    
     <main>
         <div class="container_home">
             <div class="crud_button">
-                <button class="btn" id="new_funcionario">Novo Cliente</button>
+                <button class="btn" id="new_equipe">Nova Equipe</button>
             </div>
         </div>
     </main>
+
+    <dialog id="modal_funcao">
+        <h2>Nova Equipe</h2>
+
+        <?php include(__DIR__ . '/../../../forms/admin/form_equipes.php'); ?>
+        
+    </dialog>
+</div>
 </div>
     
 </body>

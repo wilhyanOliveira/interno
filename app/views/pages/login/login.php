@@ -43,7 +43,7 @@ function valida_cpf($cpf)
 if (valida_cpf($usuario)) {
 
         $sql = "SELECT id, Nome, login, senha, tipo FROM t_funcionario where login = '$usuario' AND senha = '$senha'";
-        $res = $conn->query($sql) or die($conn->error);
+        $res = $conexao->query($sql) or die($conexao->error);
 
         $qtd = $res->num_rows;
 

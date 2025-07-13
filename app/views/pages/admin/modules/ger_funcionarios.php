@@ -17,7 +17,10 @@
 </head>
 <body>
     
-<?php include(__DIR__ . '/../../utils/admin/template.php'); ?>
+<?php 
+include(__DIR__ . '/../../utils/admin/template.php'); 
+include(__DIR__.'/../../../../database/conexao.php');
+?>
 
 <div class="container">    
     <main>
