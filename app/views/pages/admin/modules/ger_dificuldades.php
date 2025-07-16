@@ -16,7 +16,10 @@
 </head>
 <body>
 
-<?php include(__DIR__ . '/../../utils/admin/template.php'); ?>
+<?php 
+include(__DIR__ . '/../../utils/admin/template.php'); 
+include(__DIR__.'/../../../../database/conexao.php');
+?>
 
 <div class="container">    
     <main>
@@ -26,6 +29,13 @@
             </div>
         </div>
     </main>
+
+    <dialog id="modal_dificuldade">
+        <h2>Nova Dificuldade</h2>
+
+        <?php include(__DIR__ . '/../../../forms/admin/form_dificuldades.php'); ?>
+        
+    </dialog>
 </div>
     
 </body>
