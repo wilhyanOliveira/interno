@@ -1,0 +1,12 @@
+dialog
+{
+    background: rgb(18, 18, 18);
+    border: 3px solid rgba(2, 101, 215, 0.571);
+    border-radius: 15px;
+}
+
+h2
+{
+  text-align: center;
+  color: rgb(2, 102, 215);
+}

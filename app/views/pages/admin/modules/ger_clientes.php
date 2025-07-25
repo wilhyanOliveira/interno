@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/interno/public/assets/css/home/home_admin.css">
+    <link rel="stylesheet" href="/interno/public/assets/css/popup/backgroud/backgroud_g.css">
+    <link rel="stylesheet" href="/interno/public/assets/css/popup/bottons/btn_save.css">
     <link rel="stylesheet" href="/interno/public/assets/css/standart/admin/menu_lateral.css">
     <link rel="stylesheet" href="/interno/public/assets/css/standart/admin/header_menu.css">
     <link rel="stylesheet" href="/interno/public/assets/css/standart/body.css">

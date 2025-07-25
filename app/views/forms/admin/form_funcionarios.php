@@ -2,21 +2,18 @@
 
 <div class="funcionario">
     <input type="text" name="nome" placeholder="nome" id="nome" required>                      
-    <input type="text" name="cpf" placeholder="CNPJ/CPF" id="cpf" required>
+    <input type="text" name="cpf" placeholder="CPF" id="cpf" required>
     <input type="text" name="senha" placeholder="senha" id="senha" required>
 </div>
 <div class="tipo">
-<div class="minicipio">
-    <input type="text" name="cep" placeholder="CEP" id="cep" required>
-    <input type="text" name="municipio" placeholder="MUNICIPIO" id="municipio" required>
-    <input type="text" name="uf" placeholder="UF" id="uf" required>
-</div>
-    <div class="status_funcio">
-        <label for="status">ATIVO</label>
-        <input type="checkbox" name="status" id="status" value="on">
+    <div class="minicipio">
+        <input type="text" name="cep" placeholder="CEP" id="cep" required>
+        <input type="text" name="municipio" placeholder="MUNICIPIO" id="municipio" required>
+        <input type="text" name="uf" placeholder="UF" id="uf" required>
     </div>
 </div>
 
+<div class="select-group">
 <div class ="setor">
     <select name="setor" required>
         <option value="">Selecione um setor</option>
@@ -95,9 +92,18 @@
     </select>
 </div>
 
+<div class="status_funcio">
+    <label for="status">ATIVO</label>
+    <input type="checkbox" name="status" id="status" value="on">
+</div>
+
+</div>
+
 <div class="buttons_funci">
-<button type="button" class="btn" id="cancela_clie">CANCELAR</button>
+<button type="button" class="btn" id="cancela_funci">CANCELAR</button>
 <button type="submit" class="btn" id="salvar_funci">SALVAR</button>
 </div>
+
+
 
 </form>

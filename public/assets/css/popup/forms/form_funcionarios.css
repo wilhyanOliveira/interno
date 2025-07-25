@@ -1,0 +1,84 @@
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.funcionario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.funcionario input#nome {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.funcionario input#cpf,
+.funcionario input#senha {
+  width: calc(50% - 5px);
+  box-sizing: border-box;
+}
+
+.tipo .minicipio {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.minicipio input#cep {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.minicipio input#municipio {
+  width: calc(50% - 110px); 
+  box-sizing: border-box;
+}
+
+.minicipio input#uf {
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.select-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.select-group select,
+.select-group .status_funcio {
+  box-sizing: border-box;
+  border: none;
+
+}
+
+.select-group > div {
+  width: 48%;
+}
+
+.status_funcio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+
+.buttons_funci {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.buttons_funci button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
