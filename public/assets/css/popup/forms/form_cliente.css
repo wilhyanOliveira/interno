@@ -1,0 +1,120 @@
+
+input, select, textarea {
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-bottom: 3px;
+}
+
+.razao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.documentos,
+.minicipio {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.met {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.minicipio .met:first-child {
+  flex: 2; /* MUNICÍPIO maior */
+}
+.minicipio .met:nth-child(2) {
+  flex: 1; /* CEP */
+}
+.minicipio .met:nth-child(3) {
+  flex: 0 0 80px; /* UF menor fixo */
+}
+
+.rua {
+  display: flex;
+  gap: 10px;
+}
+
+.bairro, .email, .referencia {
+  margin-top: 5px;
+}
+
+.fone_cel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.telefone, .tel_celular, .atividade {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.revenda {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  margin-top: 5px;
+}
+
+.revenda label {
+  margin-right: 2px; 
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.revenda input[type="checkbox"] {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+.linha_check {
+  display: flex;
+  gap: 30px; /* controla o espaço entre os pares */
+  margin-top: 10px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* espaço entre o texto e o checkbox */
+}
+
+.check label {
+  margin: 0; /* remove margem padrão */
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.check input[type="checkbox"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+.buttons_clie {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons_clie button {
+  padding: 8px 16px;
+  cursor: pointer;
+}

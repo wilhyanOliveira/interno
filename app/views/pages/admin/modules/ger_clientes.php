@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="/interno/public/assets/css/standart/body.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="/interno/public/assets/css/popup/backgroud/backgroud_g.css">
+    <link rel="stylesheet" href="/interno/public/assets/css/popup/forms/form_cliente.css">
+
+    <link rel="stylesheet" href="/interno/public/assets/css/buttons/btn_save.css">
+    <link rel="stylesheet" href="/interno/public/assets/css/buttons/btn_cancel.css">
+
     <script src="/interno/app/views/JS/modals.js"></script>
     <script src="/interno/app/views/JS/menu_drop_down.js"></script>
 
@@ -35,8 +41,6 @@
         <h2>Novo Cliente</h2>
 
         <?php include(__DIR__ . '/../../../forms/admin/form_cliente.php'); ?>
-
-        <button id="cancela_clie" type="button">Cancelar</button>
         
     </dialog>
 </div>

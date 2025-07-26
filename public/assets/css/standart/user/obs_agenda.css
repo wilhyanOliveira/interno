@@ -1,0 +1,9 @@
+nav.menu_lateral {
+    width: 250px;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 3px 0 0 rgb(1, 134, 225);
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
