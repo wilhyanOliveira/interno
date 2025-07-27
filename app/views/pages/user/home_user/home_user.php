@@ -29,9 +29,15 @@ session_start();
     <div class="dashboard-wrapper">
     
       <div class="main-cards">
-        <div class="card">TOTAL ATENDIMENTOS DIA</div>
-        <div class="card">TOTAL ATENDIMENTOS EM ABERTO</div>
-        <div class="card">TOTAL ATENDIMENTOS EM ANÁLISE</div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+            
+        </div>
       </div>
     </div>
 

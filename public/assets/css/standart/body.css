@@ -10,5 +10,6 @@ body
     display: flex;
     flex-direction: column;
     padding-inline-start: none;
+    overflow-y: hidden;
 }
 
