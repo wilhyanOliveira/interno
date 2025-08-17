@@ -42,23 +42,35 @@ function valida_cpf($cpf)
 
 if (valida_cpf($usuario)) {
 
-        $sql = "SELECT id, Nome, login, senha, tipo FROM t_funcionario where login = '$usuario' AND senha = '$senha'";
+        $sql = "SELECT 
+            funci.id,
+            funci.Nome,
+            funci.login, 
+            funci.senha, 
+            a.id as acesso_id
+            FROM t_funcionario funci
+            inner join t_funcao f
+            on f.id = funci.id_funcao
+            inner join t_acesso a
+            on a.id = f.id_acesso
+            where login = '$usuario' AND senha = '$senha'";
         $res = $conexao->query($sql) or die($conexao->error);
 
         $qtd = $res->num_rows;
 
-        if ($qtd > 0) {
+        if ($qtd > 0) 
+        {
             $row = $res->fetch_object();
 
             $_SESSION["usuario"] = $usuario;
-            $_SESSION["nome"] = isset($row->Nome) ? $row->Nome : "Desconhecido";
-            $_SESSION["tipo"] = isset($row->tipo) ? $row->tipo : "Desconhecido";
+            $_SESSION["nome"] = $row->Nome ?? "Desconhecido";
+            $_SESSION["acesso"] = $row->id ?? "Desconhecido";
 
-            if ($row->tipo == 0) {
+            if ($row->acesso_id == 1) {
                 header('location:/interno/app/views/pages/admin/home/home_admin.php');
             }
 
-            if ($row->tipo == 1) {
+            if ($row->acesso_id == 2) {
                 header('location:/interno/app/views/pages/user/home_user-home_user.php');
             }
         } else {

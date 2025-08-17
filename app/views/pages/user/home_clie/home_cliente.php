@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@ session_start();
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="/interno/app/views/JS/modal_busca_cliente.js"></script>
-    <title>SUPORTE</title>
+    <title>CLIENTE</title>
 </head>
 <body>
 
@@ -49,8 +49,7 @@ session_start();
 </div>
 
 <dialog>
-    <h1>Informe o CNPJ do Cliente</h1>
-    <?php include(__DIR__ . '/../../../forms/client/busca_cliente.php'); ?>
+    
 </dialog>
 
 </body>
